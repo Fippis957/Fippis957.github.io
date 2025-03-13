@@ -1,0 +1,83 @@
+.content {
+    max-width: 960px;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, minmax(40px, auto));
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header header header"
+    "header header header header"
+    "header header header header"
+    "footer footer footer footer"
+    "nav nav nav nav"
+    "nav nav nav nav"
+    "main main content content"
+    "main main content content"
+    "main main content content"
+    "main main content content"
+    "ik ik ik ik"
+    "ik ik ik ik"
+    "ik ik ik ik"
+    "ik ik ik ik"
+    
+    
+}
+
+@media screen and (min-width: 760px) {
+.content {
+    max-width: 960px;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, minmax(150px, auto));
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "header header header header"
+    "main main main nav"
+    "content content content nav"
+    "ik ik ik nav"
+    "footer footer footer footer"
+    
+}
+}
+.one {
+    background-color: black;
+    grid-area: header;
+    color: white;
+    text-align: center;
+}
+.two {
+    background-color: lawngreen;
+    grid-area: main;
+    text-align: center;
+}
+.three {
+    background-color: blueviolet;
+    grid-area: nav;
+    text-align: center;
+}
+
+.four {
+    background-color: cadetblue;
+    grid-area: content;
+    text-align: center;
+}
+.five {
+    background-color: brown;
+    grid-area: ik;
+    text-align: center;
+}
+.six {
+    background-color: chocolate;
+    grid-area: footer;
+    text-align: center;
+}
