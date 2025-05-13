@@ -1,0 +1,434 @@
+:root {
+    --segmentWidth: 300px;
+}
+body{
+    margin: 0;
+    font-family: Italian Plate No2 Expanded;
+}
+.header{
+    width: 100%;
+    height: 144.33px;
+    position: sticky;
+    top: 0;   
+    z-index: 10; 
+    background-color: white;
+}
+.container {
+    width: 100%;
+    height: 71px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rightHeader {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-around;
+}
+.service-bar{
+    padding-top: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    width: var(--segmentWidth);  
+}
+#män{
+    cursor: pointer;
+}
+#män::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: black;
+    transition: width .7s ease;
+}
+#män:hover::after {
+    width: 100%;
+}
+#kvinnor{
+    cursor: pointer;
+}
+#kvinnor::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: black;
+    transition: width .7s ease;
+}
+#kvinnor:hover::after {
+    width: 100%;
+}
+#barn{
+    cursor: pointer;
+}
+#barn::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: black;
+    transition: width .7s ease;
+}
+#barn:hover::after {
+    width: 100%;
+}
+.logo{
+    position: relative;
+    top: 15px;
+} 
+.mellandagsrea{
+    background-color: #b90a2d;
+    width: 100%;
+    height: 27px;
+    text-align: center;
+    
+}
+label{
+    position: relative;
+    top: 4px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.header .mellandagsrea a{
+    font-family: Italian Plate No2 Expanded, sans-serif, Verdana, Arial;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+    top: 2px;
+}
+.header .mellandagsrea a:hover{
+    text-decoration: underline;
+}
+.topcategory{
+    width: 100%;
+    height: 48px;
+    border-top: 1px solid black;
+}
+#searchbar{
+    height: 35px;
+    width: 132px;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#searchbar > div {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-evenly;
+}
+input{
+    width: 80px;
+    height: 14px;
+}
+#sök {
+    position: relative;
+    top: 2.5px;
+    border: none;
+}
+.rightsegment{
+    display: flex;
+    flex-direction: row-reverse;
+    width: var(--segmentWidth);
+    box-sizing: border-box;
+    gap: 9px;
+}
+#pin {
+    width: 21px;
+    height: 19px;
+}
+#person{
+    width: 23px;
+    height: 23px;
+    margin-left: 8px;
+}
+#heart {
+    width: 23px;
+    height: 23px;
+    margin-left: 8px;
+}
+#bag {
+    width: 23px;
+    height: 23px;
+    margin-left: 8px;
+}
+.categories{
+    width: 60%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.categories div{
+    position: relative;
+    top: 15px;
+}
+.underline{
+    cursor: pointer;
+    height: 21px;
+}
+.underline::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: black;
+    transition: width .7s ease;
+}
+.underline:hover::after {
+    width: 100%;
+}
+
+.dropdowns1 {
+    position: relative;
+    top: -10px;
+    display: none;
+}
+.ddone{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 0;
+    
+}
+.ddone .content{
+    width: 63%;
+    height: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+}
+.dropdowns1 .content #contentleft{
+    height: 100%;
+    width: 40%;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.dropdowns1 .content #contentright{
+    height: 100%;
+    width: 60%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    
+}
+#trendigt{
+    display: inline-block;
+}
+#kundklubb{
+    position: relative;
+    top: 30px;
+    width: fit-content;
+}
+#kategorier{
+    width: fit-content;
+    position: absolute;
+    left: 470px;
+    top: 20px;
+}
+.dropdowns1 .content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+.dropdowns1 .content p{
+    font-size: 15px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    margin-left: 5px;    
+}
+#byxa2{
+    
+    margin-left: 20px;
+}
+.main-content{
+    
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#bild1{
+    margin-top: 20px;
+    width: 100%;
+}
+#carousel{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+#carousel{
+    animation: scroll 20s linear infinite alternate;
+    animation-play-state: running;
+}
+
+@keyframes scroll{
+    to{
+        transform: translate(-50%);
+    }
+    from {
+        transform: translate(0%);
+    }
+}
+.images{
+    width: 25%; 
+}
+#video{
+    width: 100%;
+    height: 700px;
+}
+#hugo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px
+}
+.imgcategory{
+    width: 25%;
+}
+.alvin{
+    margin-top: 70px;
+}
+.länkarnere{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 8px;
+}
+.länkarnere a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.länkarnere a:hover{
+    text-decoration: underline;
+}
+.jackjonesclub > img{
+    margin-top: 40px;
+    width: 100%;
+}
+.footer{
+    margin-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+    background-color: black;
+}
+.footer-links--desktop grid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 90px;
+}
+.footer div ul{
+    padding: 0;
+    list-style-type: none;
+}
+li{
+    margin-top: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.footer p{
+    color: white;
+} 
+#hållare{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+@media screen and (max-width: 1300px) { 
+    #byxa1{
+        display: none !important;
+    }
+    #byxa2 {
+        display: none !important;
+    }
+    .categories{
+        width: 72%;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) { 
+    .mobile {
+        display: block;
+    }    
+    #helaskiten{
+        display: none;
+    }
+    .rea{
+        background-color: #b90a2d;
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .logga{
+        width: 100%;
+        height: 50px;
+        display: flex; 
+        justify-content: center;
+    }
+    .images{
+        height: 250px;
+        width: 250px;
+    }
+    #video2{
+        position: relative;
+        top: 20px;
+        width: 100%;
+    }
+    .you{
+        width: 48%;
+        margin-top: 40px;
+    }
+    #navbarmobile{
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        z-index: 11;
+        position: fixed;
+        bottom: 0;
+    }
+    #svgs{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+    .länkarnere2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 10px;
+    }
+    .länkarnere2 a{
+        color: black;
+        font-size: 13px;
+    }
+    
+}
