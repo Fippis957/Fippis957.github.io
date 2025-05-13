@@ -3,7 +3,7 @@
 }
 body{
     margin: 0;
-    font-family: Italian Plate No2 Expanded;
+    font-family: system-ui, sans-serif;
 }
 .header{
     width: 100%;
@@ -101,7 +101,7 @@ label{
     margin-right: 5px;
 }
 .header .mellandagsrea a{
-    font-family: Italian Plate No2 Expanded, sans-serif, Verdana, Arial;
+    font-family: system-ui, sans-serif;
     color: white;
     text-decoration: none;
     font-size: 14px;
